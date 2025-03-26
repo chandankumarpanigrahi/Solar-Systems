@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESEARCH JOURNAL OF PHARMACY AND LIFE SCIENCES</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo_png.jpg">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/dist/css/bootstrap.min.css">
+    <!-- DataTables -->
+  <link rel="stylesheet" href="./assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="./assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <!-- UI Kit -->
+    <link rel="stylesheet" href="./assets/plugins/uikit/css/uikit.css">
+    <!-- Font Awesome Icon -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.css" />
+
+
+</head>
+
+<body>
+    <div class="loader" id="loader"></div>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header_body">
+                        <a href="./index.html" class="logo">
+                            <img src="./assets/img/rjpls logo.png" alt="">
+                        </a>
+                        <!-- This is with button tag -->
+                        <!-- <button class="custom-btn btn-11 ms-auto">Admin Login</button> -->
+                        
+                        <!-- This is with anchor tag -->
+                        <a class="custom-btn btn-11 ms-auto" href="#">Admin Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="responsive-menu">
+        <div class="container">
+            <nav class="nav-container">
+                <div class="nav-header">
+                    <div class="nav-toggle" id="nav-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item active"><a href='#' class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href='#' class="nav-link">About</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Board Members <i class="fa fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href='#'>Editorial Board</a></li>
+                            <li><a href='#'>Advisory Board</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Instructions <i class="fa fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href='#'>Instructions for Author (s)</a></li>
+                            <li><a href='#'>Instructions for Reviewer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Archive <i class="fa fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href='#'>2025</a></li>
+                            <li><a href='#'>2024</a></li>
+                            <li><a href='#'>2023</a></li>
+                            <li><a href='#'>2022</a></li>
+                            <li><a href='#'>2021</a></li>
+                            <li><a href='#'>2020</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Others <i class="fa fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href='#'>Notice</a></li>
+                            <li><a href='#'>Code of Ethics</a></li>
+                            <li><a href='#'>Peer Review Process</a></li>
+                            <li><a href='#'>FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href='#' class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href='#' class="nav-link">Contact Us</a></li>
+                    <!-- <li class="nav-item activated"><a href='#' class="nav-link">User Login</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- <?php
+   $currentPage = 'Home';
+   include 'header.php';
+?> -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+            uk-slideshow="autoplay: true; autoplay-interval: 5000">
+            <div class="uk-slideshow-items slider_area">
+                <div>
+                    <img src="./assets/img/Banner/Banner_1.png" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="./assets/img/Banner/Banner_1.png" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="./assets/img/Banner/Banner_1.png" alt="" uk-cover>
+                </div>
+            </div>
+            <a class="uk-position-center-left uk-position-small  slider_arrow" href uk-slidenav-previous
+                uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small  slider_arrow" href uk-slidenav-next
+                uk-slideshow-item="next"></a>
+        </div>
+    </div>
+    <section class="container" id="book_on_mobile" style="display: none;">
+        <div class="book_buttons mb-5">
+            <button class="custom-btn btn-11"
+                onclick="redirectToLink('https://docs.google.com/forms/d/e/1FAIpQLSeTlKYTOAVnd5RcPIOjvaD-NZG82VUqTKAWWyL7OklrjA16xQ/viewform')">BOOK
+                SLOT<div class="dot"></div></button>
+        </div>
+    </section>
+    <section class="container mt-3">
+        <div class="left_card" id="about">
+            <div class="card_details card_1">
+                <div class="card_left">
+                    <h2 class="event_heading mb-3">What We Do</h2>
+                    <p class="event_data">The <strong>RJPLS</strong> (RESEARCH JOURNAL OF PHARMACY AND LIFE SCIENCES), an official publication in collaboration
+                        with our publishing partner HOPE, provides scientists a valuable opportunity to publish their
+                        work in a peer-reviewed journal that is released once every four months. Serving as a reputable
+                        platform, the journal ensures rigorous evaluation of submitted content, maintaining high
+                        academic standards. By facilitating regular publications, we aim to encourage scientific
+                        discourse and the timely dissemination of research findings. This partnership emphasizes our
+                        commitment to fostering a dynamic scholarly community and advancing knowledge across
+                        pharmaceutical and life sciences. Authors can contribute to this esteemed journal, gaining
+                        visibility for their work in a structured and timely publication schedule.
+                    </p>
+                </div>
+            </div>
+            <div class="bg_marker"></div>
+        </div>
+        <div class="right_card" id="why">
+            <div class="card_details card_2">
+                <div class="card_right">
+                    <h2 class="event_heading mb-3">Our Mission</h2>
+                    <p class="event_data">The RJPLS Journal is committed to sharing pioneering research in
+                        pharmaceutical and life sciences, emphasizing its implications for plant, human, and veterinary
+                        therapeutics. Our platform serves as a conduit for the dissemination of groundbreaking findings
+                        that contribute to the advancement of these critical fields.</p>
+                </div>
+            </div>
+            <div class="bg_marker"></div>
+        </div>
+    </section>
+
+    <section class="container mt-5 listed_items mb-4">
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <h2 class="event_heading text-center mb-3">Latest Events</h2>
+                <div class="uk-position-relative uk-visible-toggle uk-light mb-4" tabindex="-1" uk-slider="autoplay: true">
+                    <div class="uk-slider-container">
+                        <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid all_event_cards">
+                            <div>
+                                <div class="uk-panel event_card">
+                                    <img src="http://unsplash.it/1440/768/?random=1" alt="">
+                                    <div class="event_details">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae nihil quo optio consectetur id repellendus eius, voluptates temporibus veritatis.</h3>
+                                        <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ut id, ad molestiae consequuntur tempore praesentium, enim eveniet optio dolore illum, tempora aliquam maxime. Ex facilis facere accusamus corrupti commodi consequuntur aperiam quasi eum porro minus, quam animi rerum dolores nostrum, doloremque illum! Sit optio hic voluptas magnam ea nostrum!</summary>
+                                        <div class="d-flex mb-3">
+                                            <p><i class="fa-solid fa-calendar-days"></i><span>25/04/2025</span></p>
+                                            <p class="ms-auto"><i class="fa-solid fa-location-dot"></i><span>Berhampur</span></p>
+                                        </div>
+                                        <a href="#">View Event Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel event_card">
+                                    <img src="http://unsplash.it/1440/768/?random=2" alt="">
+                                    <div class="event_details">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae nihil quo optio consectetur id repellendus eius, voluptates temporibus veritatis.</h3>
+                                        <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ut id, ad molestiae consequuntur tempore praesentium, enim eveniet optio dolore illum, tempora aliquam maxime. Ex facilis facere accusamus corrupti commodi consequuntur aperiam quasi eum porro minus, quam animi rerum dolores nostrum, doloremque illum! Sit optio hic voluptas magnam ea nostrum!</summary>
+                                        <div class="d-flex mb-3">
+                                            <p><i class="fa-solid fa-calendar-days"></i><span>25/04/2025</span></p>
+                                            <p class="ms-auto"><i class="fa-solid fa-location-dot"></i><span>Berhampur</span></p>
+                                        </div>
+                                        <a href="#">View Event Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel event_card">
+                                    <img src="http://unsplash.it/1440/768/?random=3" alt="">
+                                    <div class="event_details">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae nihil quo optio consectetur id repellendus eius, voluptates temporibus veritatis.</h3>
+                                        <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ut id, ad molestiae consequuntur tempore praesentium, enim eveniet optio dolore illum, tempora aliquam maxime. Ex facilis facere accusamus corrupti commodi consequuntur aperiam quasi eum porro minus, quam animi rerum dolores nostrum, doloremque illum! Sit optio hic voluptas magnam ea nostrum!</summary>
+                                        <div class="d-flex mb-3">
+                                            <p><i class="fa-solid fa-calendar-days"></i><span>25/04/2025</span></p>
+                                            <p class="ms-auto"><i class="fa-solid fa-location-dot"></i><span>Berhampur</span></p>
+                                        </div>
+                                        <a href="#">View Event Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel event_card">
+                                    <img src="http://unsplash.it/1440/768/?random=4" alt="">
+                                    <div class="event_details">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae nihil quo optio consectetur id repellendus eius, voluptates temporibus veritatis.</h3>
+                                        <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ut id, ad molestiae consequuntur tempore praesentium, enim eveniet optio dolore illum, tempora aliquam maxime. Ex facilis facere accusamus corrupti commodi consequuntur aperiam quasi eum porro minus, quam animi rerum dolores nostrum, doloremque illum! Sit optio hic voluptas magnam ea nostrum!</summary>
+                                        <div class="d-flex mb-3">
+                                            <p><i class="fa-solid fa-calendar-days"></i><span>25/04/2025</span></p>
+                                            <p class="ms-auto"><i class="fa-solid fa-location-dot"></i><span>Berhampur</span></p>
+                                        </div>
+                                        <a href="#">View Event Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel event_card">
+                                    <img src="http://unsplash.it/1440/768/?random=5" alt="">
+                                    <div class="event_details">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae nihil quo optio consectetur id repellendus eius, voluptates temporibus veritatis.</h3>
+                                        <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ut id, ad molestiae consequuntur tempore praesentium, enim eveniet optio dolore illum, tempora aliquam maxime. Ex facilis facere accusamus corrupti commodi consequuntur aperiam quasi eum porro minus, quam animi rerum dolores nostrum, doloremque illum! Sit optio hic voluptas magnam ea nostrum!</summary>
+                                        <div class="d-flex mb-3">
+                                            <p><i class="fa-solid fa-calendar-days"></i><span>25/04/2025</span></p>
+                                            <p class="ms-auto"><i class="fa-solid fa-location-dot"></i><span>Berhampur</span></p>
+                                        </div>
+                                        <a href="#">View Event Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel event_card">
+                                    <img src="http://unsplash.it/1440/768/?random=6" alt="">
+                                    <div class="event_details">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae nihil quo optio consectetur id repellendus eius, voluptates temporibus veritatis.</h3>
+                                        <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ut id, ad molestiae consequuntur tempore praesentium, enim eveniet optio dolore illum, tempora aliquam maxime. Ex facilis facere accusamus corrupti commodi consequuntur aperiam quasi eum porro minus, quam animi rerum dolores nostrum, doloremque illum! Sit optio hic voluptas magnam ea nostrum!</summary>
+                                        <div class="d-flex mb-3">
+                                            <p><i class="fa-solid fa-calendar-days"></i><span>25/04/2025</span></p>
+                                            <p class="ms-auto"><i class="fa-solid fa-location-dot"></i><span>Berhampur</span></p>
+                                        </div>
+                                        <a href="#">View Event Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="uk-position-center-left-out" href uk-slidenav-previous uk-slider-item="previous"><i class="fa-solid fa-angle-left slider_left"></i></a>
+                        <a class="uk-position-center-right-out" href uk-slidenav-next uk-slider-item="next"><i class="fa-solid fa-angle-right slider_right"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="#" class="view_all">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5 listed_items mb-4">
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <h2 class="event_heading text-center mb-3">Latest Articles</h2>
+                <!-- 6 Items Fixed -->
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="blog_card">
+                            <img src="./assets/img/blogs/1.jpg" alt="">
+                            <div class="blog_texts">
+                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quasi. Neque,
+                                    blanditiis quo amet magni corrupti magnam provident eum quidem?</h2>
+                                <div class="d-flex">
+                                    <h6 class="date">15-01-2024</h6>
+                                    <a href="#" class="ms-auto read_more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="blog_card">
+                            <img src="./assets/img/blogs/1.jpg" alt="">
+                            <div class="blog_texts">
+                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quasi. Neque,
+                                    blanditiis quo amet magni corrupti magnam provident eum quidem?</h2>
+                                <div class="d-flex">
+                                    <h6 class="date">15-01-2024</h6>
+                                    <a href="#" class="ms-auto read_more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="blog_card">
+                            <img src="./assets/img/blogs/1.jpg" alt="">
+                            <div class="blog_texts">
+                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quasi. Neque,
+                                    blanditiis quo amet magni corrupti magnam provident eum quidem?</h2>
+                                <div class="d-flex">
+                                    <h6 class="date">15-01-2024</h6>
+                                    <a href="#" class="ms-auto read_more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="blog_card">
+                            <img src="./assets/img/blogs/1.jpg" alt="">
+                            <div class="blog_texts">
+                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quasi. Neque,
+                                    blanditiis quo amet magni corrupti magnam provident eum quidem?</h2>
+                                <div class="d-flex">
+                                    <h6 class="date">15-01-2024</h6>
+                                    <a href="#" class="ms-auto read_more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="blog_card">
+                            <img src="./assets/img/blogs/1.jpg" alt="">
+                            <div class="blog_texts">
+                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quasi. Neque,
+                                    blanditiis quo amet magni corrupti magnam provident eum quidem?</h2>
+                                <div class="d-flex">
+                                    <h6 class="date">15-01-2024</h6>
+                                    <a href="#" class="ms-auto read_more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="blog_card">
+                            <img src="./assets/img/blogs/1.jpg" alt="">
+                            <div class="blog_texts">
+                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quasi. Neque,
+                                    blanditiis quo amet magni corrupti magnam provident eum quidem?</h2>
+                                <div class="d-flex">
+                                    <h6 class="date">15-01-2024</h6>
+                                    <a href="#" class="ms-auto read_more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="#" class="view_all">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="all_counts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="counter_card card_1">
+                        <i class="fa-solid fa-envelopes-bulk"></i>
+                        <h1 class="counter" data-countto="10" data-duration="2000">0</h1>
+                        <p>Posts</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="counter_card card_2">
+                        <i class="fa-solid fa-users"></i>
+                        <h1 class="counter" data-countto="25" data-duration="2000">0</h1>
+                        <p>Community</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="counter_card card_3">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <h1 class="counter" data-countto="6" data-duration="2000">0</h1>
+                        <p>Events</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="counter_card card_4">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h1 class="counter" data-countto="4" data-duration="2000">0</h1>
+                        <p>Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container gallery my-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="event_heading text-center mb-4">Gallery</h2>
+                <div class="gallery_container">
+                    <div class="item">
+                        <a href="http://unsplash.it/1440/768/?random=1" data-fancybox="gallery">
+                            <img src="http://unsplash.it/1440/768/?random=1">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="http://unsplash.it/1440/768/?random=2" data-fancybox="gallery">
+                            <img src="http://unsplash.it/1440/768/?random=2">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="http://unsplash.it/1440/768/?random=3" data-fancybox="gallery">
+                            <img src="http://unsplash.it/1440/768/?random=3">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="http://unsplash.it/1440/768/?random=4" data-fancybox="gallery">
+                            <img src="http://unsplash.it/1440/768/?random=4">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="http://unsplash.it/1440/768/?random=5" data-fancybox="gallery">
+                            <img src="http://unsplash.it/1440/768/?random=5">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="http://unsplash.it/1440/768/?random=6" data-fancybox="gallery">
+                            <img src="http://unsplash.it/1440/768/?random=6">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-3">
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <h2 class="event_heading text-center mb-3">We Associate With</h2>
+                <div class="all_logos">
+                    <img src="./assets/img/Logo/logo_1.png" alt="">
+                    <img src="./assets/img/Logo/logo_2.png" alt="">
+                    <img src="./assets/img/Logo/logo_3.png" alt="">
+                    <img src="./assets/img/Logo/logo_4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <?php include 'footer.php'; ?> -->
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>Berhampur, Odisha, 760001</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>+91 00000 00000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>info@jrpls.org</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="./assets/img/rjpls logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>© 2025 Research Journal of Pharmacy and Life Sciences. All rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="dev_info container-fluid">
+        <div class="container developer_text text-center">Designed and Developed by <a class="ps-1" href="https://lluminity.com/" target="_blank">Web Lluminity Technologies</a></div>
+    </div>
+
+    <script src="./assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/plugins/uikit/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <!-- DataTables  & Plugins -->
+  <script src="./assets/plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="./assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="./assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="./assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+  <script src="./assets/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="./assets/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <!-- Loader JS -->
+    <script type="text/javascript">
+        $(window).on("load", function () {
+            // $(".loader").delay(1000).fadeOut(200); // By default
+            $(".loader").delay(0).fadeOut(200);
+        });
+    </script>
+
+    <script>
+        // Function to redirect to a given link in a new tab
+        function redirectToLink(url) {
+            window.open(url, '_blank'); // Open the URL in a new tab
+        }
+
+    </script>
+
+    <script>
+        // Code for Responsive Hamburger
+        $(document).ready(function () {
+            // Toggle the main menu
+            $("#nav-toggle").click(function () {
+                $("#nav-menu").toggleClass("show");
+                $(this).toggleClass("active");
+            });
+
+            // Toggle submenu on click for mobile
+            $(".nav-link").click(function (e) {
+                if ($(window).width() <= 1000) {
+                    e.preventDefault();
+                    var $submenu = $(this).next(".submenu");
+                    $submenu.slideToggle();
+                    $(".submenu").not($submenu).slideUp(); // Close other submenus
+                }
+            });
+
+            // Handle active state for nav-items
+            $(".nav-menu .nav-item").click(function () {
+                // Remove active class from all nav-items
+                $(".nav-item").removeClass("active");
+
+                // Add active class to clicked nav-item
+                $(this).addClass("active");
+
+                // If a non-submenu item is clicked (like "Offers"), remove active_submenu from all submenu items
+                if (!$(this).find(".submenu").length) {
+                    $(".submenu li").removeClass("active_submenu");
+                }
+            });
+
+            // Handle active_submenu state for submenu items
+            $(".submenu li").click(function () {
+                // Remove active_submenu from all submenu items across the entire menu
+                $(".submenu li").removeClass("active_submenu");
+
+                // Add active_submenu to the clicked li element
+                $(this).addClass("active_submenu");
+            });
+
+            // Close menu when clicking outside
+            $(document).click(function (e) {
+                if ($(window).width() <= 1200) {
+                    if (!$(e.target).closest("#nav-menu, #nav-toggle").length) {
+                        $("#nav-menu").removeClass("show");
+                        $("#nav-toggle").removeClass("active");
+                    }
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        // Counts
+        $(".counter").each(function () {
+            var $this = $(this),
+                countTo = $this.attr("data-countto");
+            countDuration = parseInt($this.attr("data-duration"));
+            $({ counter: $this.text() }).animate(
+                {
+                    counter: countTo
+                },
+                {
+                    duration: countDuration,
+                    easing: "linear",
+                    step: function () {
+                        $this.text(Math.floor(this.counter));
+                    },
+                    complete: function () {
+                        $this.text(this.counter);
+                    }
+                }
+            );
+        });
+
+    </script>
+</body>
+
+</html>
