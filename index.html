@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <div class="loader" id="loader"></div>
+    <!-- <div class="loader" id="loader"></div> -->
     <header class="header">
         <div class="container">
             <div class="row">
@@ -110,37 +110,39 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a href='#' class="nav-link">Gallery</a></li>
-                        <li class="nav-item"><a href='#' class="nav-link">Contact Us</a></li>
+                        <li class="nav-item active"><a href='#' class="nav-link">Contact Us</a></li>
                         <!-- <li class="nav-item activated"><a href='#' class="nav-link">User Login</a></li> -->
                     </ul>
                 </nav>
             </div>
         </div>
     </section>
-    <!-- <?php
-   $currentPage = 'Home';
-   include 'header.php';
-?> -->
-    <div class="container-fluid p-0 mb-5">
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-            uk-slideshow="autoplay: true; autoplay-interval: 5000">
-            <div class="uk-slideshow-items slider_area">
-                <div>
-                    <img src="./assets/img/Banner/Banner_1.png" alt="" uk-cover>
+    <section class="banner_area">
+        <div class="container-fluid p-0 mb-5">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true; animation: fade; autoplay-interval: 1000">
+                <div class="uk-slideshow-items slider_area">
+                    <div>
+                        <img src="./assets/images/solar images/img_1.jpg" alt="" uk-cover>
+                    </div>
+                    <div>
+                        <img src="./assets/images/solar images/img_2.jpg" alt="" uk-cover>
+                    </div>
+                    <div>
+                        <img src="./assets/images/solar images/img_3.jpg" alt="" uk-cover>
+                    </div>
                 </div>
-                <div>
-                    <img src="./assets/img/Banner/Banner_1.png" alt="" uk-cover>
-                </div>
-                <div>
-                    <img src="./assets/img/Banner/Banner_1.png" alt="" uk-cover>
-                </div>
+                <!-- <a class="uk-position-center-left uk-position-small  slider_arrow" href uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small  slider_arrow" href uk-slidenav-next
+                    uk-slideshow-item="next"></a> -->
             </div>
-            <a class="uk-position-center-left uk-position-small  slider_arrow" href uk-slidenav-previous
-                uk-slideshow-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small  slider_arrow" href uk-slidenav-next
-                uk-slideshow-item="next"></a>
         </div>
-    </div>
+        <div class="banner_text">
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis facere quam omnis?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nisi maxime soluta minima doloribus sed quisquam ducimus incidunt deserunt harum, ea atque doloremque?</p>
+            <button type="button" click="'btn btn-primary"></button>
+        </div>
+    </section>
     <section class="container" id="book_on_mobile" style="display: none;">
         <div class="book_buttons mb-5">
             <button class="custom-btn btn-11"
