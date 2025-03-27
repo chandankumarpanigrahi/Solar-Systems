@@ -448,8 +448,28 @@ body {
 
 .banner_area {
     position: relative;
+    overflow: hidden;
+}
+.banner_area:after {
+	content:'';
+  top:0;
+	transform:translateX(100%);
+	width:300%;
+	height:100%;
+	position: absolute;
+	z-index:1;
+	animation: slide 5s infinite;
+	 
+
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2128501058626575) 45%, rgba(255,255,255,0.3697128509606967) 52%, rgba(255,255,255,0.18764002182904416) 59%, rgba(255,255,255,0) 100%);
 }
 
+/* animation */
+
+@keyframes slide {
+	0% {transform:translateX(-100%);}
+	100% {transform:translateX(100%);}
+}
 .banner_text {
     position: absolute;
     height: 100%;
@@ -550,7 +570,7 @@ body {
 }
 
 .slider_area img {
-    max-height: 560px;
+    /* max-height: 560px; */
 }
 
 .slider_arrow {
