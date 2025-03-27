@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap');
+
 :root {
     /* Background */
     --background-dark: #000a3f;
@@ -477,12 +479,14 @@ body {
     inset: 0;
     z-index: 1000;
     padding: 10rem 6rem;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7030461842940301) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(90deg, rgb(3 21 41 / 93%) 10%, rgba(0, 0, 0, 0) 100%);
 }
 
 .banner_text h1 {
     color: #fff;
     width: 60%;
+    font-family: "Kalnia", serif;
+    font-optical-sizing: auto;
 }
 
 .banner_text p {
