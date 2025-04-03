@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/logo/favicon.png">
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./assets/plugins/bootstrap/dist/css/bootstrap.min.css">
     <!-- DataTables -->
@@ -16,6 +17,7 @@
     <!-- UI Kit -->
     <link rel="stylesheet" href="./assets/plugins/uikit/css/uikit.css">
     <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -116,7 +118,7 @@
             </div>
         </div>
     </section>
-    <section class="banner_area mb-5">
+    <section class="banner_area">
         <div class="container-fluid p-0">
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
                 uk-slideshow="autoplay: true; animation: fade; autoplay-interval: 2500">
@@ -138,520 +140,231 @@
             </div>
         </div>
         <div class="banner_text">
-            <h1 class="wow animate__fadeInUp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis facere quam omnis?</h1>
-            <p class="wow animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nisi maxime soluta minima doloribus sed
-                quisquam ducimus incidunt deserunt harum, ea atque doloremque?</p>
-            <button type="button" class="'btn btn-primary wow animate__fadeInUp">CTA Button</button>
-        </div>
-    </section>
-    <section class="container" id="book_on_mobile" style="display: none;">
-        <div class="book_buttons mb-5">
-            <button class="custom-btn btn-11"
-                onclick="redirectToLink('https://docs.google.com/forms/d/e/1FAIpQLSeTlKYTOAVnd5RcPIOjvaD-NZG82VUqTKAWWyL7OklrjA16xQ/viewform')">BOOK
-                SLOT<div class="dot"></div></button>
-        </div>
-    </section>
-    <section class="container mt-3">
-        <div class="left_card" id="about">
-            <div class="card_details card_1">
-                <div class="card_left">
-                    <h2 class="event_heading mb-3">What We Do</h2>
-                    <p class="event_data">The <strong>RJPLS</strong> (RESEARCH JOURNAL OF PHARMACY AND LIFE SCIENCES),
-                        an official publication in collaboration
-                        with our publishing partner HOPE, provides scientists a valuable opportunity to publish their
-                        work in a peer-reviewed journal that is released once every four months. Serving as a reputable
-                        platform, the journal ensures rigorous evaluation of submitted content, maintaining high
-                        academic standards. By facilitating regular publications, we aim to encourage scientific
-                        discourse and the timely dissemination of research findings. This partnership emphasizes our
-                        commitment to fostering a dynamic scholarly community and advancing knowledge across
-                        pharmaceutical and life sciences. Authors can contribute to this esteemed journal, gaining
-                        visibility for their work in a structured and timely publication schedule.
-                    </p>
-                </div>
-            </div>
-            <div class="bg_marker"></div>
-        </div>
-        <div class="right_card" id="why">
-            <div class="card_details card_2">
-                <div class="card_right">
-                    <h2 class="event_heading mb-3">Our Mission</h2>
-                    <p class="event_data">The RJPLS Journal is committed to sharing pioneering research in
-                        pharmaceutical and life sciences, emphasizing its implications for plant, human, and veterinary
-                        therapeutics. Our platform serves as a conduit for the dissemination of groundbreaking findings
-                        that contribute to the advancement of these critical fields.</p>
-                </div>
-            </div>
-            <div class="bg_marker"></div>
-        </div>
-    </section>
-
-    <section class="container mt-5 listed_items mb-4">
-        <div class="row">
-            <div class="col-md-12 mb-3">
-                <h2 class="event_heading text-center mb-3">Latest Events</h2>
-                <div class="uk-position-relative uk-visible-toggle uk-light mb-4" tabindex="-1"
-                    uk-slider="autoplay: true">
-                    <div class="uk-slider-container">
-                        <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid all_event_cards">
-                            <div>
-                                <div class="uk-panel event_card">
-                                    <img src="http://unsplash.it/1440/768/?random=1" alt="">
-                                    <div class="event_details">
-                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae nihil
-                                            quo optio consectetur id repellendus eius, voluptates temporibus veritatis.
-                                        </h3>
-                                        <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ut id,
-                                            ad molestiae consequuntur tempore praesentium, enim eveniet optio dolore
-                                            illum, tempora aliquam maxime. Ex facilis facere accusamus corrupti commodi
-                                            consequuntur aperiam quasi eum porro minus, quam animi rerum dolores
-                                            nostrum, doloremque illum! Sit optio hic voluptas magnam ea nostrum!
-                                        </summary>
-                                        <div class="d-flex mb-3">
-                                            <p><i class="fa-solid fa-calendar-days"></i><span>25/04/2025</span></p>
-                                            <p class="ms-auto"><i
-                                                    class="fa-solid fa-location-dot"></i><span>Berhampur</span></p>
-                                        </div>
-                                        <a href="#">View Event Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-panel event_card">
-                                    <img src="http://unsplash.it/1440/768/?random=2" alt="">
-                                    <div class="event_details">
-                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae nihil
-                                            quo optio consectetur id repellendus eius, voluptates temporibus veritatis.
-                                        </h3>
-                                        <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ut id,
-                                            ad molestiae consequuntur tempore praesentium, enim eveniet optio dolore
-                                            illum, tempora aliquam maxime. Ex facilis facere accusamus corrupti commodi
-                                            consequuntur aperiam quasi eum porro minus, quam animi rerum dolores
-                                            nostrum, doloremque illum! Sit optio hic voluptas magnam ea nostrum!
-                                        </summary>
-                                        <div class="d-flex mb-3">
-                                            <p><i class="fa-solid fa-calendar-days"></i><span>25/04/2025</span></p>
-                                            <p class="ms-auto"><i
-                                                    class="fa-solid fa-location-dot"></i><span>Berhampur</span></p>
-                                        </div>
-                                        <a href="#">View Event Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-panel event_card">
-                                    <img src="http://unsplash.it/1440/768/?random=3" alt="">
-                                    <div class="event_details">
-                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae nihil
-                                            quo optio consectetur id repellendus eius, voluptates temporibus veritatis.
-                                        </h3>
-                                        <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ut id,
-                                            ad molestiae consequuntur tempore praesentium, enim eveniet optio dolore
-                                            illum, tempora aliquam maxime. Ex facilis facere accusamus corrupti commodi
-                                            consequuntur aperiam quasi eum porro minus, quam animi rerum dolores
-                                            nostrum, doloremque illum! Sit optio hic voluptas magnam ea nostrum!
-                                        </summary>
-                                        <div class="d-flex mb-3">
-                                            <p><i class="fa-solid fa-calendar-days"></i><span>25/04/2025</span></p>
-                                            <p class="ms-auto"><i
-                                                    class="fa-solid fa-location-dot"></i><span>Berhampur</span></p>
-                                        </div>
-                                        <a href="#">View Event Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-panel event_card">
-                                    <img src="http://unsplash.it/1440/768/?random=4" alt="">
-                                    <div class="event_details">
-                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae nihil
-                                            quo optio consectetur id repellendus eius, voluptates temporibus veritatis.
-                                        </h3>
-                                        <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ut id,
-                                            ad molestiae consequuntur tempore praesentium, enim eveniet optio dolore
-                                            illum, tempora aliquam maxime. Ex facilis facere accusamus corrupti commodi
-                                            consequuntur aperiam quasi eum porro minus, quam animi rerum dolores
-                                            nostrum, doloremque illum! Sit optio hic voluptas magnam ea nostrum!
-                                        </summary>
-                                        <div class="d-flex mb-3">
-                                            <p><i class="fa-solid fa-calendar-days"></i><span>25/04/2025</span></p>
-                                            <p class="ms-auto"><i
-                                                    class="fa-solid fa-location-dot"></i><span>Berhampur</span></p>
-                                        </div>
-                                        <a href="#">View Event Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-panel event_card">
-                                    <img src="http://unsplash.it/1440/768/?random=5" alt="">
-                                    <div class="event_details">
-                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae nihil
-                                            quo optio consectetur id repellendus eius, voluptates temporibus veritatis.
-                                        </h3>
-                                        <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ut id,
-                                            ad molestiae consequuntur tempore praesentium, enim eveniet optio dolore
-                                            illum, tempora aliquam maxime. Ex facilis facere accusamus corrupti commodi
-                                            consequuntur aperiam quasi eum porro minus, quam animi rerum dolores
-                                            nostrum, doloremque illum! Sit optio hic voluptas magnam ea nostrum!
-                                        </summary>
-                                        <div class="d-flex mb-3">
-                                            <p><i class="fa-solid fa-calendar-days"></i><span>25/04/2025</span></p>
-                                            <p class="ms-auto"><i
-                                                    class="fa-solid fa-location-dot"></i><span>Berhampur</span></p>
-                                        </div>
-                                        <a href="#">View Event Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-panel event_card">
-                                    <img src="http://unsplash.it/1440/768/?random=6" alt="">
-                                    <div class="event_details">
-                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae nihil
-                                            quo optio consectetur id repellendus eius, voluptates temporibus veritatis.
-                                        </h3>
-                                        <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ut id,
-                                            ad molestiae consequuntur tempore praesentium, enim eveniet optio dolore
-                                            illum, tempora aliquam maxime. Ex facilis facere accusamus corrupti commodi
-                                            consequuntur aperiam quasi eum porro minus, quam animi rerum dolores
-                                            nostrum, doloremque illum! Sit optio hic voluptas magnam ea nostrum!
-                                        </summary>
-                                        <div class="d-flex mb-3">
-                                            <p><i class="fa-solid fa-calendar-days"></i><span>25/04/2025</span></p>
-                                            <p class="ms-auto"><i
-                                                    class="fa-solid fa-location-dot"></i><span>Berhampur</span></p>
-                                        </div>
-                                        <a href="#">View Event Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="uk-position-center-left-out" href uk-slidenav-previous uk-slider-item="previous"><i
-                                class="fa-solid fa-angle-left slider_left"></i></a>
-                        <a class="uk-position-center-right-out" href uk-slidenav-next uk-slider-item="next"><i
-                                class="fa-solid fa-angle-right slider_right"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col md-12">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <a href="#" class="view_all">View All</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="container">
+                <h1 class="wow animate__fadeInUp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+                    facere quam omnis?</h1>
+                <p class="wow animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nisi
+                    maxime soluta minima doloribus sed
+                    quisquam ducimus incidunt deserunt harum, ea atque doloremque?</p>
+                <button type="button" class="'btn btn-primary wow animate__fadeInUp">CTA Button</button>
             </div>
         </div>
     </section>
 
-    <section class="container mt-5 listed_items mb-4">
-        <div class="row">
-            <div class="col-md-12 mb-3">
-                <h2 class="event_heading text-center mb-3">Latest Articles</h2>
-                <!-- 6 Items Fixed -->
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <div class="blog_card">
-                            <img src="./assets/img/blogs/1.jpg" alt="">
-                            <div class="blog_texts">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quasi. Neque,
-                                    blanditiis quo amet magni corrupti magnam provident eum quidem?</h2>
-                                <div class="d-flex">
-                                    <h6 class="date">15-01-2024</h6>
-                                    <a href="#" class="ms-auto read_more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="blog_card">
-                            <img src="./assets/img/blogs/1.jpg" alt="">
-                            <div class="blog_texts">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quasi. Neque,
-                                    blanditiis quo amet magni corrupti magnam provident eum quidem?</h2>
-                                <div class="d-flex">
-                                    <h6 class="date">15-01-2024</h6>
-                                    <a href="#" class="ms-auto read_more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="blog_card">
-                            <img src="./assets/img/blogs/1.jpg" alt="">
-                            <div class="blog_texts">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quasi. Neque,
-                                    blanditiis quo amet magni corrupti magnam provident eum quidem?</h2>
-                                <div class="d-flex">
-                                    <h6 class="date">15-01-2024</h6>
-                                    <a href="#" class="ms-auto read_more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="blog_card">
-                            <img src="./assets/img/blogs/1.jpg" alt="">
-                            <div class="blog_texts">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quasi. Neque,
-                                    blanditiis quo amet magni corrupti magnam provident eum quidem?</h2>
-                                <div class="d-flex">
-                                    <h6 class="date">15-01-2024</h6>
-                                    <a href="#" class="ms-auto read_more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="blog_card">
-                            <img src="./assets/img/blogs/1.jpg" alt="">
-                            <div class="blog_texts">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quasi. Neque,
-                                    blanditiis quo amet magni corrupti magnam provident eum quidem?</h2>
-                                <div class="d-flex">
-                                    <h6 class="date">15-01-2024</h6>
-                                    <a href="#" class="ms-auto read_more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="blog_card">
-                            <img src="./assets/img/blogs/1.jpg" alt="">
-                            <div class="blog_texts">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quasi. Neque,
-                                    blanditiis quo amet magni corrupti magnam provident eum quidem?</h2>
-                                <div class="d-flex">
-                                    <h6 class="date">15-01-2024</h6>
-                                    <a href="#" class="ms-auto read_more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col md-12">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <a href="#" class="view_all">View All</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="all_counts">
+    <section class="main_cards">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="counter_card card_1">
-                        <i class="fa-solid fa-envelopes-bulk"></i>
-                        <h1 class="counter" data-countto="10" data-duration="2000">0</h1>
-                        <p>Posts</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="counter_card card_2">
-                        <i class="fa-solid fa-users"></i>
-                        <h1 class="counter" data-countto="25" data-duration="2000">0</h1>
-                        <p>Community</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="counter_card card_3">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <h1 class="counter" data-countto="6" data-duration="2000">0</h1>
-                        <p>Events</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="counter_card card_4">
-                        <i class="fa-solid fa-briefcase"></i>
-                        <h1 class="counter" data-countto="4" data-duration="2000">0</h1>
-                        <p>Service</p>
+                <div class="col-md-12">
+                    <div class="all_main_cards">
+                        <div class="left_card_area">
+                            <div class="main_card">
+                                <div class="top_icon">
+                                    <i class="bi bi-brightness-high"></i>
+                                </div>
+                                <h2>Lorem ipsum dolor sit.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.</p>
+                            </div>
+                            <div class="main_card">
+                                <div class="top_icon">
+                                    <i class="bi bi-brightness-high"></i>
+                                </div>
+                                <h2>Lorem ipsum dolor sit.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.</p>
+                            </div>
+                            <div class="main_card">
+                                <div class="top_icon">
+                                    <i class="bi bi-brightness-high"></i>
+                                </div>
+                                <h2>Lorem ipsum dolor sit.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.</p>
+                            </div>
+                        </div>
+                        <div class="right_card_area">
+                            <div class="main_card">
+                                <div class="top_icon">
+                                    <i class="bi bi-brightness-high"></i>
+                                </div>
+                                <h2>Lorem ipsum dolor sit.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container gallery my-5">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="event_heading text-center mb-4">Gallery</h2>
-                <div class="gallery_container">
-                    <div class="item">
-                        <a href="http://unsplash.it/1440/768/?random=1" data-fancybox="gallery">
-                            <img src="http://unsplash.it/1440/768/?random=1">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="http://unsplash.it/1440/768/?random=2" data-fancybox="gallery">
-                            <img src="http://unsplash.it/1440/768/?random=2">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="http://unsplash.it/1440/768/?random=3" data-fancybox="gallery">
-                            <img src="http://unsplash.it/1440/768/?random=3">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="http://unsplash.it/1440/768/?random=4" data-fancybox="gallery">
-                            <img src="http://unsplash.it/1440/768/?random=4">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="http://unsplash.it/1440/768/?random=5" data-fancybox="gallery">
-                            <img src="http://unsplash.it/1440/768/?random=5">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="http://unsplash.it/1440/768/?random=6" data-fancybox="gallery">
-                            <img src="http://unsplash.it/1440/768/?random=6">
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container my-3">
-        <div class="row">
-            <div class="col-md-12 mb-3">
-                <h2 class="event_heading text-center mb-3">We Associate With</h2>
-                <div class="all_logos">
-                    <img src="./assets/img/Logo/logo_1.png" alt="">
-                    <img src="./assets/img/Logo/logo_2.png" alt="">
-                    <img src="./assets/img/Logo/logo_3.png" alt="">
-                    <img src="./assets/img/Logo/logo_4.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <?php include 'footer.php'; ?> -->
-
-    <!-- Footer -->
-    <footer class="footer-section">
+    <section class="about-section">
         <div class="container">
-            <div class="footer-cta pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>Berhampur, Odisha, 760001</span>
-                            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h5 class="text-solar fw-bold">About City Solar</h5>
+                    <h2 class="fw-bold">Powering a Sustainable Future</h2>
+                    <p class="pe-md-4">
+                        Established 4 years ago, City Solar is committed to revolutionizing India's energy landscape by
+                        providing
+                        high-quality solar solutions. Our mission is to make clean and affordable energy accessible to
+                        everyone,
+                        reducing carbon footprints and promoting a greener tomorrow. We offer cutting-edge solar panels,
+                        inverters, and energy storage systems designed for maximum efficiency and durability.
+                    </p>
+                    <h5 class="fw-bold mb-3">Why Choose City Solar?</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="highlight-icon"><i class="fas fa-check-circle"></i> High-Efficiency Solar Panels
+                            </p>
+                            <p class="highlight-icon"><i class="fas fa-check-circle"></i> Affordable & Cost-Saving
+                                Solutions</p>
+                            <p class="highlight-icon"><i class="fas fa-check-circle"></i> 24/7 Customer Support</p>
+                            <p class="highlight-icon"><i class="fas fa-check-circle"></i> Easy Installation &
+                                Maintenance</p>
+                            <p class="highlight-icon"><i class="fas fa-check-circle"></i> Smart Energy Storage Options
+                            </p>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call us</h4>
-                                <span>+91 00000 00000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>info@jrpls.org</span>
-                            </div>
+                        <div class="col-md-6">
+                            <p class="highlight-icon"><i class="fas fa-check-circle"></i> Government Subsidy Assistance
+                            </p>
+                            <p class="highlight-icon"><i class="fas fa-check-circle"></i> Durable & Weather-Resistant
+                                Products</p>
+                            <p class="highlight-icon"><i class="fas fa-check-circle"></i> Residential & Commercial
+                                Solutions</p>
+                            <p class="highlight-icon"><i class="fas fa-check-circle"></i> Sustainable & Eco-Friendly
+                                Energy</p>
+                            <p class="highlight-icon"><i class="fas fa-check-circle"></i> Trusted by Thousands of
+                                Customers</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer-content pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="./assets/img/rjpls logo.png" class="img-fluid"
-                                        alt="logo"></a>
-                            </div>
-                            <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
-                                    incididuntut consec tetur adipisicing
-                                    elit,Lorem ipsum dolor sit amet.</p>
-                            </div>
-                            <div class="footer-social-icon">
-                                <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                            </div>
-                        </div>
+                <div class="col-lg-5 about_right_area ps-5">
+                    <img src="./assets/images/solar images/img_7.jpg" class="about_image rounded shadow"
+                        alt="Solar Image">
+                    <div class="info-card info-card-1">
+                        <i class="fas fa-solar-panel"></i>
+                        <h5>10,000+ Solar Installations</h5>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
-                            </div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                            </div>
-                            <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Email Address">
-                                    <button><i class="fab fa-telegram-plane"></i></button>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="info-card info-card-2">
+                        <i class="fas fa-globe"></i>
+                        <h5>100% Renewable Energy</h5>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>© 2025 Research Journal of Pharmacy and Life Sciences. All rights reserved.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </section>
 
-    <div class="dev_info container-fluid">
-        <div class="container developer_text text-center">Designed and Developed by <a class="ps-1"
-                href="https://lluminity.com/" target="_blank">Web Lluminity Technologies</a></div>
+    <section class="middle_banner">
+        <div class="container">
+            <h2 class="title">The emergence of FCI</h2>
+            <p>
+                India is currently witnessing a major revolution in the pet sector; with hectic schedules and very
+                little time in their hands,
+                people are shifting to cats as a choice for their pet. A cat is definitely the best companion to have,
+                too! With this fundamental
+                change, it’s equally important to develop the feline industry as well. To aid that, Feline Club of
+                India, or FCI, came into
+                existence in 2018.
+            </p>
+            <a href="#" class="btn"><i class="fa-solid fa-phone"></i> Contact us!</a>
+        </div>
+    </section>
+    <section class="container my-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h6 class="section-title">Know more about</h6>
+                <h2 class="fw-bold">What we do</h2>
+            </div>
+            <a href="#" class="contact-btn">Contact</a>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/images/solar images/img_5.jpg" alt="Conventions">
+                    <div class="card-body position-relative">
+                        <span class="tag">Conventions</span>
+                        <p class="mb-0 pt-3">We hold informative seminars throughout the country to spread awareness
+                            about solar energy, sustainable solutions, and modern technology.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/images/solar images/img_5.jpg" alt="Solar Registration">
+                    <div class="card-body position-relative">
+                        <span class="tag">Solar Registration</span>
+                        <p class="mb-0 pt-3">We conduct registration drives where users can enroll for solar energy
+                            programs, get certifications, and receive government subsidies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/images/solar images/img_5.jpg" alt="Solar Exhibitions">
+                    <div class="card-body position-relative">
+                        <span class="tag">Solar Exhibitions</span>
+                        <p class="mb-0 pt-3">We organize solar exhibitions to showcase new innovations, technology, and
+                            products that contribute to renewable energy development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column text-light">
+                    <img src="./assets/images/logo/logo.png"  class="footer-logo">
+                    <h2>About</h2>
+                    <p>Feline Club of India is the only active organization in India, involved in the improvement of Cat Fancy in India. FCI was formed 4 years ago by cat enthusiasts, and the Founding Members include vets as well as animal lovers with a keen interest in cat upkeep.</p>
+                </div>
+                <div class="footer-column text-light quick-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Previous Events - Registration Drives</a></li>
+                        <li><a href="#">Previous Events - Online Webinars</a></li>
+                        <li><a href="#">Previous Events - Cat Shows</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cancellation and Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column text-light">
+                    <h2>Connect with us!</h2>
+                    <div class="subscribe">
+                        <input type="email" placeholder="Your Email">
+                        <button><i class="fas fa-paper-plane text-solar"></i></button>
+                    </div>
+                    <h3>Social Media</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f text-solar"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-solar"></i></a>
+                        <a href="#"><i class="fab fa-youtube text-solar"></i></a>
+                        <a href="#"><i class="fab fa-twitter text-solar"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-light">
+                <p>Designed by <a href="#">SiNSS</a>. Copyright © 2022. All rights reserved.</p>
+            </div>
+        </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script src="./assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/script.js"></script>
