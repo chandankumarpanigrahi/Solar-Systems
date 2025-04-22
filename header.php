@@ -41,14 +41,15 @@
                                 <i class="fa-solid fa-envelope-open-text"></i>
                                 <div class="contact_details">
                                     <p>Email Address</p>
-                                    <a href="mailto:demo@gamil.com">demo@gmail.com</a>
+                                    <a href="mailto:citysolarsolution1@gmail.com">citysolarsolution1@gmail.com</a>
                                 </div>
                             </div>
                             <div class="contact_area">
                                 <i class="fa-solid fa-phone-volume"></i>
                                 <div class="contact_details">
                                     <p>Phone Number</p>
-                                    <a href="tel:+91 00000 00000">+91 00000 00000</a>
+                                    <a href="tel:+91 89262 10701">+91 89262 10701</a>
+                                    <a href="tel:+91 73169 66719">+91 73169 66719</a>
                                 </div>
                             </div>
                         </div>
